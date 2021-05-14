@@ -26,12 +26,14 @@ class Flag extends React.PureComponent<Props, void> {
 
     const url = imageUrl(isoToCountryCode(code).toUpperCase(), size.toLowerCase())
 
+    const lower = (q: string) => q.toLowerCase()
+
     return (
       <div
         className={
           `flag
-          ${gradient}
-          size-${size}
+          ${lower(gradient)}
+          size-${lower(size)}
           ${hasBorder ? 'border' : ''}
           ${hasDropShadow ? 'drop-shadow' : ''}
           ${hasBorderRadius ? 'border-radius' : ''}
