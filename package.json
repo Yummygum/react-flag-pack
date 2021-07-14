@@ -21,6 +21,7 @@
     "dist/*"
   ],
   "main": "dist/react-flag-rollup.cjs.js",
+  "typings": "dist/Flag.d.ts",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Yummygum/react-flagpack/issues"
